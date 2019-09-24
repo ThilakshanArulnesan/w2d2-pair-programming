@@ -1,3 +1,5 @@
+//REFACTORED CODE//
+
 let arr = ["\r|",
   "\r/",
   "\r-",
@@ -14,7 +16,7 @@ for (let char in arr) {
     process.stdout.write(arr[char] + "   ");
     if (char == arr.length - 1) {
       console.log();
-    };
+    }
   }, time);
   time += 200;
 }
@@ -22,7 +24,8 @@ for (let char in arr) {
 
 
 /*
-Old implementation:
+//OLD IMPLEMENTATION//
+
 setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 100);
